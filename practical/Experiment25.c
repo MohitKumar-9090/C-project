@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+int main()
+{
+    for (int i = 1; i <= 7; i++)
+    {
+
+        switch (i)
+        {
+        case 1:
+            printf("Monday:\n");
+            break;
+        case 2:
+            printf("Tuesday:\n");
+            break;
+        case 3:
+            printf("Wednesday:\n");
+            break;
+        case 4:
+            printf("Thursday:\n");
+            break;
+        case 5:
+            printf("Friday:\n");
+            break;
+        case 6:
+            printf("Saturday:\n");
+            break;
+        case 7:
+            printf("Sunday:\n");
+            break;
+        }
+
+        int lectureCount = 6; 
+
+        if (i == 3)
+            lectureCount = 4; 
+        if (i == 6)
+            lectureCount = 2;
+
+        for (int j = 1; j <= 6; j++)
+        {
+            printf("Lecture %d\n", j);
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+}
